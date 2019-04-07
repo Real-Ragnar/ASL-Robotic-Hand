@@ -35,6 +35,7 @@ export ROS_IP=<INSERT THE COMPUTER IP>
 
 -----
 On RPI:
+(ROS setup)
 1. In terminal run sudo nano .bashrc and add the following lines at the bottom:
 source /opt/ros/kinetic/setup.bash
 source ~/catkin_ws/devel/setup.bash
@@ -43,6 +44,16 @@ export ROS_HOSTNAME=<INSERT IP of RPI>
 export ROS_IP=<INSERT IP of RPI>
 
 2. Run sudo nano /etc/hosts/ and add the IP address of the Computer with its hostname 
+
+(Web Server setup)
+1. In terminal navigate to wherever 'app.py' is stored and run the following commands:
+	export FLASK_APP=app.py
+	export FLASK_ENV=development
+	flask run
+2. To verify that the web server is running, open up a web browser and go to the address '127.0.0.1'
+3. To exit the web server, type CNTRL + C in terminal
+4. To run the web server again, you must kill the previous instance of the webserver
+	type 'killall -9 -i flask' into terminal
 
 ----
 ON COMPUTER:
