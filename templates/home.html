@@ -1,0 +1,81 @@
+<!--child template
+
+-->
+{% extends 'layout.html' %}     #wrapping this home file with the layout file
+
+{% block body %}
+<div class="title"> <!--large text box-->
+    <h1>
+        The Automated Hand
+    </h1>
+    <pre style="color:white;font-family:Arial;font-size:20px;">
+        For ELG4913 : Professor Emil Petriu
+
+        Created by : Steven Souksanh, Sohaib Mahmood, Ilyas Kandid, Moustapha BM, and Tife
+    </pre>
+</div>
+
+<body>
+<div class="grid-container">
+
+<div class="grid-item">
+<a href="/night/on"><img src="https://i.imgur.com/ehBcbkq.png" alt="A""></a>
+<p>A</p>
+</div>
+
+<div class="grid-item">
+<a href="/night/off"><img src="https://i.imgur.com/WMVEyIi.png" alt="B""></a>
+<p>B</p>
+</div>
+
+<div class="grid-item">
+<a href="/sunset/off"><img src="https://i.imgur.com/PPibtEa.png?1" alt="2""></a>
+<p>2</p>
+</div>  
+
+<div class="grid-item">
+<a href="/sunset/on"><img src="https://i.imgur.com/dkVqhOa.png" alt="D""></a>
+<p>D</p>
+</div>
+
+<div class="grid-item">
+<a href="/4pm/off"><img src="https://i.imgur.com/BlD2QLN.png?1" alt="Hello""></a>
+<p>Hello</p>
+</div>
+
+<div class="grid-item">
+<a href="/4pm/on"><img src="https://i.imgur.com/S7Xg7hI.png" alt="F""></a>
+<p>F</p>
+</div>  
+
+<div class="grid-item">
+<a href="/noon/off"><img src="https://i.imgur.com/r34Lr6x.png?1" alt="3""></a>
+<p>3</p>
+</div>
+
+<div class="grid-item">
+<a href="/noon/on"><img src="https://i.imgur.com/JyiKiAJ.png?1" alt="Release""></a>
+<p>Release</p>
+</div>
+
+<div class="grid-item">
+<a href="/9am/on"><img src="https://i.imgur.com/qJtRYY8.png" alt="I""></a>
+<p>I</p>
+</div>  
+
+</div>
+
+<!--
+" 
+<h3> Heater (Red Led) >-- {{ledRed}}</h3>
+
+<h2>Temp Control</h2>
+<h3> Heater (Red Led) ==> <a href ="/ledRed/on" class="button">--TURN ON--</a> <a href="/ledRed/off" class = "button">--TURN OFF--</a></h3><br>
+"
+-->
+
+
+</body>
+
+
+{% endblock %}
